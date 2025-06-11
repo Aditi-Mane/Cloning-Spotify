@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify - Web Player: Music for everyone</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+  <div class="container flex">
+
+    <div class="left radius">
+      <!--top left part-->
+      <div class="top-left bg-colour radius">
+        <span>
+          <img class="invert" src="./media/logo.svg" alt="logo">
+          <span>Spotify</span>
+          <img width="30px" id="close" src="./media/close.svg" alt="close">
+        </span>
+        <div class="home flex">
+          <img width="16px" src="./media/home.svg" alt="home">
+          <span><b>Home</b></span>
+        </div>
+        <div class="search flex">
+          <img width="16px" src="./media/search.svg" alt="search">
+          <span><b>Search</b></span>
+        </div>
+      </div>
+
+      <!--library-->
+      <div class="library bg-colour radius">
+        <span>
+          <img width="35px" src="./media/library.svg" alt="library">
+          <span><b>Your Library</b></span>
+        </span>
+        <div class="songList flex">
+          <ul>
+            <!--present in js-->
+          </ul>
+        </div>
+        <div class="footer-links">
+          <a style="padding-left:25px"href="#">Legal</a>
+          <a href="#">Privacy Center</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Cookies</a>
+          <a href="#">About Ads</a>
+          <a href="#">Accessibility</a>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!--right side-->
+
+    <div class="right bg-colour radius">
+      <div class="header flex radius">
+        <div class="head-left">
+          <img id="hamburger" src="./media/hamburger.svg" alt="hamburger">
+          <img src="./media/left-arrow.svg" alt="left-arrow">
+          <img src="./media/right-arrow.svg" alt="right-arrow">
+        </div>
+        <div class="head-right">
+          <button>Sign Up</button>
+          <button>Log in</button>
+        </div>
+      </div>
+
+      <!--Spotify Playlists section-->
+      <div class="playlists">
+        <h1>Spotify Playlists</h1>
+        <div class="cardContainer">
+          <div class="card radius">
+            <div class="playbutton">
+              <img src="./media/playbutton.svg">
+            </div>
+            <img src="./media/angry.jpg" alt="angry">
+            <h1>Angry mood</h1>
+            <p>Calm your anger</p>
+          </div>
+
+          <div class="card radius">
+            <div class="playbutton">
+              <img src="./media/playbutton.svg">
+            </div>
+            <img src="./media/angry.jpg" alt="angry">
+            <h1>Angry mood</h1>
+            <p>Calm your anger</p>
+          </div>
+
+          <div class="playbar radius">
+            <div class="seekbar">
+              <div class="star">
+                <img class="invert" src="./media/star.svg" alt="star">
+              </div>
+            </div>
+            <div class="songPlay">
+              <div class="songinfo">
+
+              </div>
+              <div class="songbtns">
+                <img id="previous" class="invert" width="40px" src="./media/backward.svg">
+                <img id="play" class="invert" width="40px" src="./media/play.svg">
+                <img id="next" class="invert" width="40px" src="./media/forward.svg">
+              </div>
+
+              <div class="songtime">
+
+              </div>
+            </div>
+
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
