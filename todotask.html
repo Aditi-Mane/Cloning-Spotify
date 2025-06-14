@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <input id="taskInput" type="text" placeholder="Add a task">
+  <button onclick="addTask()">Add</button>
+  <ul id="taskList"></ul>
+
+  <script>
+    functio
+      const li = document.createElement('li');
+      li.textContent = taskText;
+
+      const delBtn = document.createElement('button');
+      delBtn.textContent = '❌';
+      delBtn.onclick = () => li.remove();
+
+      li.onclick = () => li.classList.toggle('done');
+      li.appendChild(d
+      document.getElementById('taskList').appendChild(li);
+      input.value = '');
+
+    }
+  </script>
+
+  <style>
+    .done { text-decoration: line-through; color: gray; }
+    button { margin-left: 10px; }
+  </style>
+</body>
+</html>

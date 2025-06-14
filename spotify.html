@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Spotify - Web Player: Music for everyone</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="utility.css">
+  <link rel="stylesheet" href="./CSS/style.css">
+  <link rel="stylesheet" href="./CSS/utility.css">
 </head>
 
 <body>
@@ -41,8 +41,8 @@
             <!--present in js-->
           </ul>
         </div>
-        <div class="footer-links">
-          <a style="padding-left:25px"href="#">Legal</a>
+        <div style="padding-left:35px"class="footer-links">
+          <a href="#">Legal</a>
           <a href="#">Privacy Center</a>
           <a href="#">Privacy Policy</a>
           <a href="#">Cookies</a>
@@ -73,7 +73,8 @@
       <div class="playlists">
         <h1>Spotify Playlists</h1>
         <div class="cardContainer">
-          <div class="card radius">
+
+          <div data-folder="cs" class="card radius">
             <div class="playbutton">
               <img src="./media/playbutton.svg">
             </div>
@@ -82,7 +83,7 @@
             <p>Calm your anger</p>
           </div>
 
-          <div class="card radius">
+          <div data-folder="ncs" class="card radius">
             <div class="playbutton">
               <img src="./media/playbutton.svg">
             </div>
@@ -106,22 +107,24 @@
                 <img id="play" class="invert" width="40px" src="./media/play.svg">
                 <img id="next" class="invert" width="40px" src="./media/forward.svg">
               </div>
-
-              <div class="songtime">
-
+        
+              <div class="songtime"> </div>
+              <div class="volume flex">
+                <img width="30px"src="./media/volume.svg" alt="volume">
+                <div class="range">
+                  <input type="range" name="volume">
+                </div>
               </div>
+  
             </div>
 
           </div>
-
-
-
         </div>
       </div>
     </div>
 
   </div>
-  <script src="script.js"></script>
+  <script src="JS/script.js"></script>
 </body>
 
 </html>
